@@ -23,8 +23,7 @@ def load_input(filepath: str) -> List[List[int]]:
 
 
 if __name__ == "__main__":
-    current = load_input("day6/sample.txt")
-    # print(current)
+    current = load_input("day6/data.txt")
     for i in range(80):
         current = simulate(current)
-        print(f"length of list {len(current)}")
+    print(len(current))
